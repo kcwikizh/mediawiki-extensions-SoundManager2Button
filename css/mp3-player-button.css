@@ -115,3 +115,7 @@ a.sm2_button.sm2_paused,
 a.sm2_button.sm2_paused:hover {
  background-color:#999;
 }
+
+a.sm2_button.hidden {
+  display: none;
+}

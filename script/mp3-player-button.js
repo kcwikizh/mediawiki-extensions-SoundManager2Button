@@ -231,6 +231,7 @@ function BasicMP3Player() {
     for (i=0, j=oLinks.length; i<j; i++) {
       if (self.classContains(oLinks[i],self.css.sDefault) && !self.classContains(oLinks[i],self.excludeClass)) {
         // self.addClass(oLinks[i],self.css.sDefault); // add default CSS decoration - good if you're lazy and want ALL MP3/playable links to do this
+        self.removeClass(oLinks[i], 'hidden');
         self.links[foundItems] = (oLinks[i]);
         self.indexByURL[oLinks[i].href] = foundItems; // hack for indexing
         foundItems++;

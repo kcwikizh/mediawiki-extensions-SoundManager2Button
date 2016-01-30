@@ -100,7 +100,7 @@ function renderSM2( $input, $args, $parser, $frame ) {
 	$output = '';
 	if( $file ) {
 		$url = $file->getFullURL();
-		$output='<a href="'.$url.'" title="'.wfMessage('soundmanager2button-play')->inContentLanguage()->escaped().'" class="sm2_button">'.wfMessage('soundmanager2button-play')->inContentLanguage()->escaped().'</a>';
+		$output='<a href="'.$url.'" title="'.wfMessage('soundmanager2button-play')->inContentLanguage()->escaped().'" class="sm2_button hidden">'.wfMessage('soundmanager2button-play')->inContentLanguage()->escaped().'</a>';
 	}
 
 	return $output;
